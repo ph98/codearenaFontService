@@ -1,0 +1,10 @@
+kind: pipeline
+type: docker
+name: frontend
+
+steps:
+- name: build
+  image: node
+  commands:
+  - yarn
+  - yarn build
